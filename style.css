@@ -1,6 +1,12 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+/* variables */
+:root {
+  --primary: #259b24;
+  --primary-alt: #0a7e07;
+}
+
 /* clean slate */
 html, body {
   padding: 0;
@@ -21,17 +27,17 @@ h2, h3, h4, h5, h6 {
 
 /* links */
 a {
-  color: #259b24;
+  color: var(--primary);
   font-weight: bold;
 }
 
 a:hover, a:active, a:focus {
-  color: #0a7e07;
+  color: var(--primary-alt);
 }
 
 /* navbar */
 nav {
-  background-color: #259b24;
+  background-color: var(--primary);
   overflow: hidden;
 }
 nav .branding {
@@ -51,7 +57,7 @@ nav a {
   font-weight: normal;
 }
 nav a:hover, nav a:active, nav a:focus {
-  background-color: #0a7e07;
+  background-color: var(--primary-alt);
   color: #fff;
 }
 
@@ -115,7 +121,7 @@ input, select, textarea {
   border: 1px solid #333;
 }
 input:focus, select:focus, textarea:focus {
-  border: 1px solid #0a7e07;
+  border: 1px solid var(--primary-alt);
 }
 input[type=checkbox] {
   display: inline-block;
@@ -129,7 +135,7 @@ textarea {
 
 /* buttons */
 .button {
-  background-color: #259b24;
+  background-color: var(--primary);
   border: none;
   color: #fff;
   padding: 8px 16px;
@@ -143,7 +149,7 @@ textarea {
 }
 .button:hover, .button:active, .button:focus {
   color: #fff;
-  background-color: #0a7e07;
+  background-color: var(--primary-alt);
   outline: 0;
 }
 .button-danger {
